@@ -18,3 +18,40 @@ header nav{
     color: #5d4c7e;
 }
 
+
+@media screen and (min-width: 0px) {
+    .contenido__index{
+        display: grid;
+        grid-template-areas: 
+            "titulo"
+            "descripcion"
+            "boton";
+        grid-template-rows: 5fr 3fr 1fr;
+        grid-template-columns: 1fr;
+        /* margin: 1rem; */
+    }
+
+    .contenido__index section{
+        text-align: center;
+    }
+    
+    .titulo__index{
+        grid-area: titulo;
+        background-image: url(../assets/img/fondo__index.jpg);
+        background-size: cover;
+        padding: 1rem;
+    }
+
+    .titulo__index h1{
+        font-size: 5rem;
+        color: white;
+    }
+    
+    .descripcion__index{
+        grid-area: descripcion;
+    }
+    
+    .descripcion__index button{
+        grid-area: boton;
+    }
+}
