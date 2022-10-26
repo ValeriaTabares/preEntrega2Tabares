@@ -38,8 +38,7 @@ footer .text-center{
     text-transform: uppercase;
 }
 
-
-
+/* contenido index */
 @media screen and (min-width: 0px){
     .contenido__index section{
         display: grid;
@@ -59,7 +58,7 @@ footer .text-center{
         color: #5d4c7e;
         font-family: 'Lato', sans-serif;
         font-weight: 300;
-        padding: 2rem;
+        padding: 2rem 2rem 0 2rem;
         width: 100%;
     }
     .contenido__index section img{
@@ -72,7 +71,7 @@ footer .text-center{
         font-family: 'Lato', sans-serif;
         font-weight: 300;
         text-align: justify;
-        padding: 1rem 1rem 0 1rem;
+        padding: 0 1rem 0 1rem;
     }
     .contenido__index section button{
         grid-area: boton__index;
@@ -82,7 +81,7 @@ footer .text-center{
         border-radius: 2rem;
         padding-left: 1.2rem;
         padding-right: 1.2rem;
-        margin: 1rem;
+        margin-bottom: 2rem;
         font-size: 1rem;
     }
     .contenido__index section button a{
@@ -131,7 +130,7 @@ footer .text-center{
     }
     .contenido__index section img{
         grid-area: imagen__index;
-        padding: 3rem 3rem 0 1rem;
+        padding: 3rem 3rem 3rem 1rem;
     }
 }
 
