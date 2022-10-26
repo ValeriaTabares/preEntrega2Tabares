@@ -22,6 +22,24 @@ header nav {
     color: #6c757d;
 }
 
+/* footer */
+/* footer */
+footer{
+    background-color: #f3ecff;
+}
+
+footer div section a i{
+    font-size: 1.5rem;
+    color: #5d4c7e;
+}
+
+footer .text-center{
+    background-color: #5d4c7e;
+    text-transform: uppercase;
+}
+
+
+
 @media screen and (min-width: 0px){
     .contenido__index section{
         display: grid;
