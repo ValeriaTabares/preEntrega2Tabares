@@ -134,3 +134,85 @@ footer .text-center{
     }
 }
 
+/* contenido nosotros */
+@media screen and (min-width: 0px){
+    .contenido__nosotros section{
+        display: grid;
+        grid-template-areas:
+            "titulo__nosotros"
+            "descripcion__nosotros"
+            "imagen__nosotros"
+            "info__nosotros";
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .contenido__nosotros section h1{
+        grid-area: titulo__nosotros;
+        text-align: center;
+        font-size: 4rem;
+        color: #5d4c7e;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        padding: 2rem 2rem 0 2rem;
+        width: 100%;
+    }
+    .contenido__nosotros section p{
+        grid-area: descripcion__nosotros;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        text-align: justify;
+        padding: 0 1rem 0 1rem;
+    }
+    .contenido__nosotros section img{
+        grid-area: imagen__nosotros;
+        width: 100%;
+        padding: 1rem;
+    }
+    .contenido__nosotros section div{
+        grid-area: info__nosotros;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        text-align: justify;
+        padding: 1rem;
+        color: #5d4c7e;
+    }
+
+@media screen and (min-width: 600px){
+    .contenido__nosotros section>p{
+        font-size: 1.5rem;
+    }
+    .contenido__nosotros section div{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .contenido__nosotros section{
+        display: grid;
+        grid-template-areas:
+            "titulo__nosotros titulo__nosotros"
+            "descripcion__nosotros descripcion__nosotros"
+            "imagen__nosotros info__nosotros";
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .contenido__nosotros section h1{
+        grid-area: titulo__nosotros;
+        padding: 3rem 2rem 1rem 2rem;
+    }
+    .contenido__nosotros section p{
+        grid-area: descripcion__nosotros;
+        padding: 1rem 3rem 0 3rem;
+    }
+    .contenido__nosotros section img{
+        grid-area: imagen__nosotros;
+        padding: 1rem 0 3rem 3rem;
+        width: 100%;
+    }
+    .contenido__nosotros section div{
+        grid-area: info__nosotros;
+        padding: 1rem 0 3rem 3rem;
+    }
+}
