@@ -23,7 +23,6 @@ header nav {
 }
 
 /* footer */
-/* footer */
 footer{
     background-color: #f3ecff;
 }
@@ -31,6 +30,11 @@ footer{
 footer div section a i{
     font-size: 1.5rem;
     color: #5d4c7e;
+}
+
+footer div section a i:hover{
+    color: #6c757d;
+    transition: 1s;
 }
 
 footer .text-center{
