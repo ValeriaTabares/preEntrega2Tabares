@@ -18,6 +18,9 @@ header nav{
     color: #5d4c7e;
 }
 
+.nav-link:hover{
+    color: #6c757d;
+}
 
 @media screen and (min-width: 0px) {
     .contenido__index{
