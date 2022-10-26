@@ -1,60 +1,119 @@
 /* reestableciendo valores CSS */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 /* header */
-.navbar-nav li{
+.navbar-nav li {
     padding: 1rem;
 }
 
-header nav{
+header nav {
     background-color: #f3ecff;
 }
 
-.nav-link{
+.nav-link {
     color: #5d4c7e;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #6c757d;
 }
 
-@media screen and (min-width: 0px) {
-    .contenido__index{
-        display: grid;
-        grid-template-areas: 
-            "titulo"
-            "descripcion"
-            "boton";
-        grid-template-rows: 5fr 3fr 1fr;
-        grid-template-columns: 1fr;
-        /* margin: 1rem; */
-    }
-
+@media screen and (min-width: 0px){
     .contenido__index section{
-        text-align: center;
+        display: grid;
+        grid-template-areas:
+            "titulo__index"
+            "imagen__index"
+            "descripcion__index"
+            "boton__index";
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
-    
-    .titulo__index{
-        grid-area: titulo;
-        background-image: url(../assets/img/fondo__index.jpg);
-        background-size: cover;
+    .contenido__index section h1{
+        grid-area: titulo__index;
+        text-align: center;
+        font-size: 4rem;
+        color: #5d4c7e;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        padding: 2rem;
+        width: 100%;
+    }
+    .contenido__index section img{
+        grid-area: imagen__index;
+        width: 100%;
         padding: 1rem;
     }
-
-    .titulo__index h1{
-        font-size: 5rem;
-        color: white;
+    .contenido__index section p{
+        grid-area: descripcion__index;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        text-align: justify;
+        padding: 1rem 1rem 0 1rem;
     }
-    
-    .descripcion__index{
-        grid-area: descripcion;
+    .contenido__index section button{
+        grid-area: boton__index;
+        background-color: #f3ecff;
+        border: 0;
+        height: 2rem;
+        border-radius: 2rem;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        margin: 1rem;
+        font-size: 1rem;
     }
-    
-    .descripcion__index button{
-        grid-area: boton;
+    .contenido__index section button a{
+        font-family: 'Lato', sans-serif;
+        text-decoration: none;
+        color: #5d4c7e;
+    }
+    .contenido__index section button a:hover{
+        color: #6c757d;
     }
 }
+
+@media screen and (min-width: 600px){
+    .contenido__index section p{
+        font-size: 1.5rem;
+    }
+    .contenido__index section button{
+        height: 2.5rem;
+        border-radius: 2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .contenido__index section{
+        display: grid;
+        grid-template-areas:
+            "titulo__index imagen__index"
+            "descripcion__index imagen__index"
+            "boton__index imagen__index";
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contenido__index section h1{
+        grid-area: titulo__index;
+        padding: 3rem 2rem 0 2rem;
+    }
+    .contenido__index section p{
+        grid-area: descripcion__index;
+        padding: 0 3rem 0 3rem;
+    }
+    .contenido__index section button{
+        grid-area: boton__index;
+    }
+    .contenido__index section img{
+        grid-area: imagen__index;
+        padding: 3rem 3rem 0 1rem;
+    }
+}
+
