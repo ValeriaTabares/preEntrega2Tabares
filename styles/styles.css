@@ -51,7 +51,7 @@ footer .text-center{
             "imagen__index"
             "descripcion__index"
             "boton__index";
-        grid-template-rows: repeat(3, auto);
+        grid-template-rows: repeat(4, auto);
         grid-template-columns: 1fr;
         justify-items: center;
     }
@@ -95,6 +95,7 @@ footer .text-center{
     }
     .contenido__index section button a:hover{
         color: #6c757d;
+        transition: 1s;
     }
 }
 
