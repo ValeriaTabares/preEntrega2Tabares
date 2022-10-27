@@ -91,6 +91,7 @@ footer .text-center{
     }
     .contenido__index section button a:hover{
         color: #6c757d;
+        transition: 1s;
     }
 }
 
