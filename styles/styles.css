@@ -314,3 +314,34 @@ footer .text-center{
 .contenido__galeria .carousel-inner{
     padding: 2rem;
 }
+
+/* contenido contacto */
+.contenido__contacto{
+    font-family: 'Lato', sans-serif;
+    color: #5d4c7e;
+
+}
+
+.contenido__contacto h1{
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    color: #5d4c7e;
+    font-weight: 300;
+    padding: 2rem;
+}
+
+.contenido__contacto form fieldset{
+    padding: 2rem;
+}
+
+.contenido__contacto form fieldset button{
+    background-color: #f3ecff;
+    border-radius: 2rem;
+    padding: 0.2rem 1.2rem 0.2rem 1.2rem;
+}
+
+.contenido__contacto form fieldset button:hover{
+    background-color: #f3ecff;
+    color: #6c757d;
+}
