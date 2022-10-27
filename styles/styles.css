@@ -77,17 +77,15 @@ footer .text-center{
         grid-area: boton__index;
         background-color: #f3ecff;
         border: 0;
-        height: 2rem;
         border-radius: 2rem;
-        padding-left: 1.2rem;
-        padding-right: 1.2rem;
+        padding: 0 1.2rem 0.2rem 1.2rem;
         margin-bottom: 2rem;
-        font-size: 1rem;
     }
     .contenido__index section button a{
         font-family: 'Lato', sans-serif;
         text-decoration: none;
         color: #5d4c7e;
+        font-size: 1rem;
     }
     .contenido__index section button a:hover{
         color: #6c757d;
@@ -96,11 +94,8 @@ footer .text-center{
 }
 
 @media screen and (min-width: 600px){
-    .contenido__index section p{
-        font-size: 1.5rem;
-    }
     .contenido__index section button{
-        height: 2.5rem;
+        height: 2rem;
         border-radius: 2rem;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
@@ -108,7 +103,7 @@ footer .text-center{
     }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1024px){
     .contenido__index section{
         display: grid;
         grid-template-areas:
@@ -132,6 +127,12 @@ footer .text-center{
     .contenido__index section img{
         grid-area: imagen__index;
         padding: 3rem 3rem 3rem 1rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .contenido__index section p{
+        font-size: 1.5rem;
     }
 }
 
