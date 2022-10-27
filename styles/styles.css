@@ -119,7 +119,7 @@ footer .text-center{
     }
     .contenido__index section h1{
         grid-area: titulo__index;
-        padding: 3rem 2rem 0 2rem;
+        padding: 4rem 2rem 0 2rem;
     }
     .contenido__index section p{
         grid-area: descripcion__index;
@@ -131,6 +131,12 @@ footer .text-center{
     .contenido__index section img{
         grid-area: imagen__index;
         padding: 3rem 3rem 3rem 1rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .contenido__index section p{
+        font-size: 1.2rem;
     }
 }
 
