@@ -47,7 +47,7 @@ footer .text-center{
             "imagen__index"
             "descripcion__index"
             "boton__index";
-        grid-template-rows: repeat(3, auto);
+        grid-template-rows: repeat(4, auto);
         grid-template-columns: 1fr;
         justify-items: center;
     }
