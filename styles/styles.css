@@ -339,7 +339,8 @@ footer .text-center{
 .contenido__contacto form fieldset button{
     background-color: #f3ecff;
     border-radius: 2rem;
-    padding: 0.2rem 1.2rem 0.2rem 1.2rem;
+    padding: 0.1rem 1.2rem 0.1rem 1.2rem;
+    color: #5d4c7e;
 }
 
 .contenido__contacto form fieldset button:hover{
