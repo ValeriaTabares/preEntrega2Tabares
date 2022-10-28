@@ -295,26 +295,33 @@ footer .text-center{
 }
 
 /* contenido galería */
-.contenido__galeria h1{
+.contenido__galeria{
+    margin: 1rem;
+}
+
+.texto__galeria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.texto__galeria h1{
     width: 100%;
     text-align: center;
     font-size: 4rem;
     color: #5d4c7e;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    padding: 2rem;
+    padding-bottom: 1rem;
 }
 
-.contenido__galeria p{
+.texto__galeria p{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     text-align: justify;
-    padding: 0 2rem 0 2rem;
     font-size: 1.2rem;
-}
-
-.contenido__galeria .carousel-inner{
-    padding: 2rem;
+    align-self: center;
+    padding-right: 1rem;
 }
 
 /* contenido contacto */
